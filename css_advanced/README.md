@@ -83,6 +83,7 @@ holbertonschool-web-development/
 └── css_advanced/
 ├── README.md
 └── index.html
+└── styles.css
 
 
 Later tasks in this project will add:
