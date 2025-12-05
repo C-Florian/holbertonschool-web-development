@@ -138,112 +138,56 @@ header {
    HERO SECTION
 ---------------------------------- */
 
-.hero {
-    position: relative;
-    min-height: 800px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #ffffff;
-    padding-top: 120px; /* Prevent header overlap */
-}
+<section class="hero">
+    <div class="hero-content">
 
-/* Hero background image with gradient overlay */
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-        linear-gradient(
-            180deg,
-            rgba(7, 22, 41, 0.7) 0%,
-            rgba(7, 22, 41, 0.9) 100%
-        ),
-        url("images/background.jpg") center/cover no-repeat;
-    z-index: -1;
-}
+        <h1 class="hero-title">Get schooled</h1>
 
-.hero-content {
-    max-width: 700px;
-    margin: 0 auto;
-}
+        <div class="hero-subtitle">
+            <span>Smiles</span>
+            <span>Grin</span>
+            <span>Laugh</span>
+        </div>
 
-/* Main title */
-.hero-title {
-    font-size: 80px;
-    line-height: 1.1;
-    margin-bottom: 16px;
-}
+        <button class="btn">Register for free</button>
 
-/* Small words (smiles, grin, laugh) */
-.hero-subtitle {
-    font-size: 14px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 40px;
-}
+        <div class="hero-bottom">
+            <h2 class="hero-bottom-title">
+                <span>Learn</span> from the pros
+            </h2>
 
-.hero-subtitle span {
-    position: relative;
-}
+            <div class="pros-list">
 
-.hero-subtitle span::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -8px;
-    width: 18px;
-    height: 2px;
-    background-color: #c271ff;
-    transform: translateX(-50%);
-}
+                <div class="pro-card">
+                    <img src="pro1.png" alt="">
+                    <p class="pro-name">Phillip Massey</p>
+                    <p class="pro-role">Smile of the year 2018 - 2019</p>
+                </div>
 
-/* "Learn from the pros" section under hero */
-.hero-bottom-title {
-    font-size: 32px;
-    margin-bottom: 40px;
-}
+                <div class="pro-card">
+                    <img src="pro2.png" alt="">
+                    <p class="pro-name">Nannie Lawrence</p>
+                    <p class="pro-role">Best little smile 2017</p>
+                </div>
 
-.hero-bottom-title span {
-    color: #c271ff;
-    font-weight: 700;
-}
+                <div class="pro-card">
+                    <img src="pro3.png" alt="">
+                    <p class="pro-name">Bruce Walters</p>
+                    <p class="pro-role">Best friend smile live performance 2019</p>
+                </div>
 
-/* Instructor cards */
-.pros-list {
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-}
+                <div class="pro-card">
+                    <img src="pro4.png" alt="">
+                    <p class="pro-name">Henry Hughes</p>
+                    <p class="pro-role">24h smiles winner 2016 - 2019</p>
+                </div>
 
-.pro-card {
-    text-align: center;
-    max-width: 160px;
-}
+            </div>
+        </div>
 
-.pro-card img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 16px;
-    border: 4px solid rgba(255, 255, 255, 0.3);
-}
+    </div>
+</section>
 
-.pro-name {
-    font-weight: 700;
-    margin-bottom: 4px;
-}
-
-.pro-role {
-    font-style: italic;
-    font-size: 12px;
-    opacity: 0.8;
-}
 
 /* ---------------------------------
    TESTIMONIALS SECTION
